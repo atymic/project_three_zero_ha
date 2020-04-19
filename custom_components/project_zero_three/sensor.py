@@ -37,7 +37,7 @@ ATTRIBUTION = "Data provided by Project Zero Three"
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
         vol.Optional(CONF_UPDATE_FREQUENCY, default=CONF_UPDATE_FREQUENCY_DEFAULT): cv.positive_int,
-        vol.Optional(CONF_FUEL_TYPES, default=CONF_DEFAULT_FUEL_TYPES): vol.All(
+        vol.Optional(CONF_FUEL_TYPES, default=CONF_ALLOWED_FUEL_TYPES): vol.All(
             cv.ensure_list, [vol.In(CONF_ALLOWED_FUEL_TYPES)]
         ),
     }
@@ -47,7 +47,7 @@ NOTIFICATION_ID = "project_zero_three_notification"
 NOTIFICATION_TITLE = "Project Three Zero Setup"
 
 # TODO figure out to how to do this dynamically
-MIN_TIME_BETWEEN_UPDATES = datetime.timedelta(minutes=15)
+MIN_TIME_BETWEEN_UPDATES = datetime.timedelta(minutes=5)
 
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
