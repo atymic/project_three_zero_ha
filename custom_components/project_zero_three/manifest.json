@@ -1,7 +1,7 @@
 {
   "domain": "project_zero_three",
   "name": "7-11 Fuel Price Tacker",
-  "documentation": "https://www.home-assistant.io/integrations/nsw_fuel_station",
+  "documentation": "https://github.com/atymic/project_three_zero_ha",
   "requirements": [],
   "codeowners": ["@atymic"]
 }
