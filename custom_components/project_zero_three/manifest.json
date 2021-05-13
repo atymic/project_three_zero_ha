@@ -3,5 +3,6 @@
   "name": "7-11 Fuel Price Tacker",
   "documentation": "https://github.com/atymic/project_three_zero_ha",
   "requirements": [],
-  "codeowners": ["@atymic"]
+  "codeowners": ["@atymic"],
+  "version": "1.0.0"
 }
