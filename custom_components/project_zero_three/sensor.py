@@ -161,7 +161,7 @@ class StationPriceSensor(Entity):
         return None
 
     @property
-    def device_state_attributes(self) -> dict:
+    def extra_state_attributes(self) -> dict:
         """Return the state attributes of the device."""
         data = self.get_price_data()
 
