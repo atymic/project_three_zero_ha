@@ -14,8 +14,8 @@ from homeassistant.util import Throttle
 
 _LOGGER = logging.getLogger(__name__)
 
-ATTR_LATITUDE = "Latitude"
-ATTR_LONGITUDE = "Longitude"
+ATTR_LATITUDE = "latitude"
+ATTR_LONGITUDE = "longitude"
 
 
 CONF_UPDATE_FREQUENCY = 'update_frequency'
